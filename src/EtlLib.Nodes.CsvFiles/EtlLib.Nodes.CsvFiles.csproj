@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>EtlLib.Nodes.CsvFiles</PackageId>
+    <PackageVersion>$(Version)</PackageVersion>
+    <Authors>Cyle Witruk</Authors>
+    <Description>CsvHelper integration nodes for EtlLib: A simple ETL framework for .NET.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/cylewitruk/EtlLib</PackageProjectUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>etl extract transform load csv</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="7.1.1" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="2.1.23" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EtlLib\EtlLib.csproj" />
+  </ItemGroup>
+</Project>
